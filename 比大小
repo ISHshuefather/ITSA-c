@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, largest = 0;
+
+    // 輸入三個整數
+    scanf("%d %d %d", &a, &b, &c);
+
+    // 判斷最大的數
+    if (a > largest) {
+        largest = a;
+    }
+    if (b > largest) {
+        largest = b;
+    }
+    if (c > largest) {
+        largest = c;
+    }
+
+    // 輸出結果
+    printf("%d\n", largest);
+
+    return 0;
+}
