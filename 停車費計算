@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int startHour, startMin, endHour, endMin;
+    
+    // 讀取輸入的開始與結束時間
+    scanf("%d %d %d %d", &startHour, &startMin, &endHour, &endMin);
+
+    // 計算停車時間（以分鐘計算）
+    int totalMin;
+    totalMin = (endHour * 60 + endMin) - (startHour * 60 + startMin);
+
+    
+
+    // 計算停車費
+    int money = 0;
+    if (totalMin <= 120) {
+        money = (totalMin / 30) * 30;
+    } else if (totalMin > 120 && totalMin <= 240) {
+        money = 120 + ((totalMin - 120) / 30) * 40;
+    } else if (totalMin > 240) {
+        money = 120 + 160 + ((totalMin - 240) / 30) * 60;
+    }
+
+    // 輸出停車費
+    printf("%d\n", money);
+
+    return 0;
+}
