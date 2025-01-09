@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n, a, b;
+
+    // 讀取測試資料的組數
+    scanf("%d", &n);
+
+    for (int i = 0; i < n; i++) {
+        // 讀取每組的兩個數字
+        scanf("%d %d", &a, &b);
+
+        // 計算並輸出兩數的和
+        printf("%d\n", a + b);
+    }
+
+    return 0;
+}
