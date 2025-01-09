@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int time;
+    double money;
+
+    // 讀取輸入的時間
+    scanf("%d", &time);
+
+    // 計算初始費用
+    money = time * 0.9;
+
+    // 如果時間在800到1500之間，打9折
+    if (time > 800 && time < 1500) {
+        money = money * 0.9;
+    }
+
+    // 如果時間大於等於1500，打7.9折
+    if (time >= 1500) {
+        money = money * 0.79;
+    }
+
+    // 輸出費用，保留1位小數
+    printf("%.1f\n", money);
+
+    return 0;
+}
