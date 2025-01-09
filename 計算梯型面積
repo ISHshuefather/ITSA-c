@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    double a, b, h;
+    
+    // 輸入上底、下底和高
+    scanf("%lf", &a);
+    scanf("%lf", &b);
+    scanf("%lf", &h);
+    
+    // 計算梯形面積
+    double area = (a + b) * h / 2.0;
+    
+    // 輸出結果，保留1位小數
+    printf("Trapezoid area:%.1f\n", area);
+    
+    return 0;
+}
