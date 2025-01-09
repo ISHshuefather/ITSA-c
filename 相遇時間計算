@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int sec = 0, m;
+    
+    // 讀取輸入距離
+    scanf("%d", &m);
+
+    // 計算速度
+    double speed = (100 - 30 * 2.54) / 100;
+
+    // 計算所需秒數
+    sec = m / speed;
+
+    // 秒數加 1
+    sec++;
+
+    // 輸出結果
+    printf("%d\n", sec);
+
+    return 0;
+}
