@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    double BMI;
+    double w, h;
+
+    // 讀取輸入
+    scanf("%lf %lf", &w, &h);
+
+    // 計算BMI
+    h = h / 100;
+    BMI = w / (h * h);
+
+    // 輸出結果，保留兩位小數
+    printf("%.2f\n", BMI);
+
+    return 0;
+}
