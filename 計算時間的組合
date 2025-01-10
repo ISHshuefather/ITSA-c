@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int s, days, hours, minutes, seconds;
+
+    // 輸入總秒數
+    scanf("%d", &s);
+
+    // 計算天數、時數、分鐘數、秒數
+    days = s / 86400;
+    hours = (s % 86400) / 3600;
+    minutes = (s % 3600) / 60;
+    seconds = s % 60;
+
+    // 輸出結果
+    printf("%d days\n", days);
+    printf("%d hours\n", hours);
+    printf("%d minutes\n", minutes);
+    printf("%d seconds\n", seconds);
+
+    return 0;
+}
