@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int a;
+
+    // 輸入四位數的整數
+    scanf("%d", &a);
+
+    // 按位輸出，每位以逗號分隔，最後一位不帶逗號
+    for (int i = 0; i < 3; i++) {
+        printf("%d,", a % 10);
+        a = a / 10;
+    }
+    // 輸出最後一位，不加逗號
+    printf("%d\n", a % 10);
+
+    return 0;
+}
