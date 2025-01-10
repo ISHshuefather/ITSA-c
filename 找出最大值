@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int n, max = 0, temp;
+    scanf("%d", &n);  // 使用 scanf 讀取 n 的值
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &temp);  // 使用 scanf 讀取 temp 的值
+        if (temp > max) {
+            max = temp;
+        }
+    }
+    printf("%d\n", max);  // 使用 printf 輸出最大值
+
+    return 0;
+}
