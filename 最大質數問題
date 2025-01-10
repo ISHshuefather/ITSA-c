@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);  // 輸入一個整數 n
+
+    int flag = 1;  // 宣告一個標記變數，用於判斷是否找到質數
+
+    // 從 n-1 開始向下遞減尋找最大的質數
+    for (int i = n - 1; i > 1; i--) {
+        flag = 1;
+
+        // 內部迴圈檢查是否為質數
+        for (int j = 2; j < i; j++) {
+            if (i % j == 0) {
+                flag = 0;  // 如果 i 能被 j 整除，則表示 i 不是質數
+                break;     // 跳出內部迴圈，不再檢查更大的 j
+            }
+        }
+
+        // 如果 flag 為 1，則表示 i 是質數
+        if (flag == 1) {
+            printf("%d\n", i);  // 輸出最大的質數
+            break;  // 找到質數後跳出外層迴圈
+        }
+    }
+
+    return 0;
+}
