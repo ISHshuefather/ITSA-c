@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int number;
+
+    // 輸入數字
+    scanf("%d", &number);
+
+    // 處理萬位數
+    for (int i = 0; i < number / 10000; i++) {
+        printf("*");
+    }
+    printf("\n");
+
+    // 處理千位數
+    for (int i = 0; i < (number / 1000) % 10; i++) {
+        printf("*");
+    }
+    printf("\n");
+
+    // 處理百位數
+    for (int i = 0; i < (number / 100) % 10; i++) {
+        printf("*");
+    }
+    printf("\n");
+
+    // 處理十位數
+    for (int i = 0; i < (number / 10) % 10; i++) {
+        printf("*");
+    }
+    printf("\n");
+
+    // 處理個位數
+    for (int i = 0; i < number % 10; i++) {
+        printf("*");
+    }
+    printf("\n");
+
+    return 0;
+}
