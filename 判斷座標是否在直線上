@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+    int x, y;
+
+    scanf("%d %d %d", &a, &b, &c);
+    scanf("%d %d", &x, &y);
+
+    if ((a * x + b * y + c) == 0) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
+    return 0;
+}
