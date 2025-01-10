@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <ctype.h>  // 用於 tolower 函式
+
+int main() {
+    char a;
+    scanf("%c", &a);  // 輸入一個字元
+
+    // 將字元轉為小寫
+    char lower_a = tolower(a);
+
+    // 判斷字元是否為母音
+    if (lower_a == 'a' || lower_a == 'e' || lower_a == 'i' || lower_a == 'o' || lower_a == 'u') {
+        printf("母音\n");
+    } else {
+        printf("子音\n");
+    }
+
+    return 0;
+}
