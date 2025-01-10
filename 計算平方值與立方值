@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int x;
+    int n;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+    // 輸入一個整數
+    scanf("%d", &x);
+
+    // 輸出整數、本身平方及立方
+    printf("%d %d %d\n", x, x * x, x * x * x);
+    }
+    return 0;
+}
