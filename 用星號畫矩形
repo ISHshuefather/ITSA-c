@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int m, n;
+
+    // 輸入行數和列數
+    scanf("%d %d", &m, &n);
+
+    // 輸出 n 行，每行 m 個 '*'
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
