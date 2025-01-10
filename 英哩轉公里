@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int mile;
+    double km;
+
+    // 輸入英里數
+    scanf("%d", &mile);
+
+    // 將英里轉換為公里
+    km = mile * 1.6;
+
+    // 格式化輸出，保留小數點後1位
+    printf("km=%.1f\n", km);
+
+    return 0;
+}
