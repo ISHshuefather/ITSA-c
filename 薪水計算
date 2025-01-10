@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int time, salary;
+
+    // 輸入工作時數與薪水
+    scanf("%d %d", &time, &salary);
+
+    if (time <= 60) {
+        printf("%.1f\n", time * salary * 1.0);
+    } else if (time > 60 && time <= 120) {
+        printf("%.1f\n", 60 * salary + (time - 60) * salary * 1.33);
+    } else {
+        printf("%.1f\n", 60 * salary + 60 * salary * 1.33 + (time - 120) * 1.66 * salary);
+    }
+
+    return 0;
+}
