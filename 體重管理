@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    double BMI;
+    scanf("%d", &n); // 使用 scanf 讀取整數 n
+    for (int i = 0; i < n; i++) {
+        scanf("%lf", &BMI); // 使用 scanf 讀取 BMI
+        if (BMI < 18.5) {
+            printf("體重過輕\n");
+        } else if (BMI >= 18.5 && BMI < 24) {
+            printf("正常\n");
+        } else if (BMI >= 24 && BMI < 28) {
+            printf("體重過重\n");
+        } else {
+            printf("肥胖\n");
+        }
+    }
+
+    return 0;
+}
