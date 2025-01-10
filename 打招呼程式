@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    char name[100];
+
+    // 輸入名稱
+    scanf("%s", name);
+
+    // 輸出歡迎訊息
+    printf("Hello %s\n", name);
+
+    return 0;
+}
