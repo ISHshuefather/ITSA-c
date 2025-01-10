@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char chinese[5][20] = {"dog", "cat", "duck", "cow", "fox"};
+    char english[5][20] = {"狗", "貓", "鴨", "牛", "狐"};
+    char target[20];
+
+    // 輸入目標字串
+    scanf("%s", target);
+
+    // 遍歷字典，進行匹配
+    for (int i = 0; i < 5; i++) {
+        if (strcmp(target, chinese[i]) == 0) {
+            printf("%s\n", english[i]);
+        } else if (strcmp(target, english[i]) == 0) {
+            printf("%s\n", chinese[i]);
+        }
+    }
+
+    return 0;
+}
