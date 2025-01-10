@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, result;
+
+    // 輸入迴圈次數
+    scanf("%d", &n);
+
+    for (int j = 0; j < n; j++) {
+        // 初始化 result 為 1
+        result = 1;
+
+        // 輸入每次的位移值
+        scanf("%d", &i);
+
+        if (i > 31) {
+            printf("Value of more than 31\n");
+        } else {
+            // 位移運算元，每往左移即乘以 2
+            result = result << i;
+            printf("%d\n", result);
+        }
+    }
+
+    return 0;
+}
