@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+void factorialCalculate(int factorial) {
+    long long int sum = 1;
+    while (factorial > 1) {
+        sum = sum * factorial;
+        factorial--;
+    }
+    printf("%lld\n", sum);  // 使用 %lld 來輸出 long long int 型別
+}
+
+int main() {
+    int n, factorial;
+    scanf("%d", &n);  // 使用 scanf 來讀取 n
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &factorial);  // 使用 scanf 來讀取 factorial
+        factorialCalculate(factorial);  // 呼叫函數計算階乘
+    }
+
+    return 0;
+}
